@@ -20,9 +20,9 @@ const Header = () => {
     useEffect(() => {
         let handler = (e) => {
 
-            if (!menuRef?.current?.contains(e.target)) {
-                setShowSideBar(false)
-            }
+            // if (!menuRef?.current?.contains(e.target)) {
+            //     setShowSideBar(false)
+            // }
 
             if (!profileMenuRef?.current?.contains(e.target)) {
                 setShowProfile(false)
@@ -74,8 +74,8 @@ const Header = () => {
                     </div>
                 }
             </div>
-            <div ref={menuRef} onClick={()=>setShowSideBar(!showSideBar)}>
-                {showSideBar && <MobileSideBar />}
+            <div onClick={() => setShowSideBar(!showSideBar)} ref={menuRef}>
+                {showSideBar && <MobileSideBar/>}
             </div>
         </>
     )

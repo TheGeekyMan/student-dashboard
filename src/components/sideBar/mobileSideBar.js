@@ -26,10 +26,10 @@ const MobileSideBar = () => {
                     )
                 })}
             </div>
-            <li className={styles.logoutItem} onClick={()=>{handleLogout()}}>
+            {/* <li className={styles.logoutItem} onClick={()=>{handleLogout()}}>
                 <img src={LogoutLogo} alt='LogoutLogo' />
                 <span className={styles.menuItem}>Logout</span>
-            </li>
+            </li> */}
         </div>
     )
 }
