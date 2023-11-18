@@ -1,6 +1,6 @@
 ## This project is deployed at
 
-[https://student-dashboard-khaki.vercel.ap](student-dashboard)
+[https://student-dashboard-khaki.vercel.app](student-dashboard)
 
 
 ## Available Scripts
