@@ -1,17 +1,15 @@
-import HomePage from './components/homePage/homepage';
-import Login from './components/login/login';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Layout from './Layout';
+import Routes from "./common/routes";
 
 function App() {
 
-  const isLogin = sessionStorage.getItem('email') ? true : false;
-
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
+      <Layout>
+        <Routes />
+      </Layout>
     </BrowserRouter>
   );
 }

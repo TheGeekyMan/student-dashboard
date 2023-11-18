@@ -1,23 +1,21 @@
 import React from "react";
 import styles from './enrolledCourses.module.scss';
-import OOPSLogo from '../../../assets/OOPS.svg';
-import FDBMSLogo from '../../../assets/FDBMS.svg';
+import { CoursesList } from "../../../constants/courses";
+import { useNavigate } from "react-router-dom";
 
 const EnrolledCourses = () => {
 
-    const coursesList = [
-        {logo:OOPSLogo, title:'Object oriented programming'},
-        {logo:FDBMSLogo, title:'Fundamentals of database systems'}
-    ]
+    const currentPathName = window.location.pathname;
+    const navigate = useNavigate();
 
     return(
         <div className={styles.container}>
             <div className={styles.textContainer}>
                 <p className={styles.title}>Enrolled Courses</p>
-                <p className={styles.seeAll}>See all</p>
+                {currentPathName !== '/courses' && <p className={styles.seeAll} onClick={()=>navigate('/courses')}>See all</p>}
             </div>
             <div className={styles.cardContainer}>
-                {coursesList.map((item,index)=>{
+                {CoursesList.map((item,index)=>{
                     return(
                         <div className={styles.cardBody} key={index}>
                             <div className={styles.firstCol}>

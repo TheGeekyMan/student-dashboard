@@ -1,0 +1,22 @@
+.container{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    margin: auto;
+    box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
+    // padding-top: 30px;
+    // padding-left: 55px;
+    margin: 30px;
+    padding: 45px;
+}
+
+.steps{
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.list_sem{
+    list-style: decimal;
+    text-align: left;
+}

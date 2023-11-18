@@ -5,6 +5,7 @@ import ProfileLogo from '../../assets/profile.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBarsStaggered, faXmark } from '@fortawesome/free-solid-svg-icons'
 import MobileSideBar from "../sideBar/mobileSideBar";
+import { sideBarData } from "../../constants/sideBarData";
 
 const Header = () => {
 
@@ -18,11 +19,11 @@ const Header = () => {
 
     useEffect(() => {
         let handler = (e) => {
-            //for market dropdown
+
             if (!menuRef?.current?.contains(e.target)) {
                 setShowSideBar(false)
             }
-            //for profile menu dropdown
+
             if (!profileMenuRef?.current?.contains(e.target)) {
                 setShowProfile(false)
             }
@@ -73,7 +74,7 @@ const Header = () => {
                     </div>
                 }
             </div>
-            <div>
+            <div ref={menuRef} onClick={()=>setShowSideBar(!showSideBar)}>
                 {showSideBar && <MobileSideBar />}
             </div>
         </>
