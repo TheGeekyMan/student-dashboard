@@ -1,0 +1,23 @@
+.container{
+    padding: 20px;
+
+    @media (min-width:279px) and (max-width:415px){
+        padding: 0;
+    }
+}
+
+.sideBarContainer{
+    position: fixed;
+
+    @media (min-width:279px) and (max-width:415px){
+        display: none;
+    }
+}
+
+.rightSideContainer{
+    margin-left: 14rem;
+
+    @media (min-width:279px) and (max-width:415px){
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,64 @@
+.container {
+    height: 95vh;
+    width: 14rem;
+    background: linear-gradient(0deg, #925FE2 80.26%, rgba(146, 95, 226, 0.00) 143.39%, #E2D4F7 143.39%);
+    border-radius: 24px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: flex-start;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.logoContainer {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 32px;
+    background: linear-gradient(180deg, #925FE2 0%, #7042C0 100%);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+
+.graduationCap {
+    height: 4rem;
+    width: 4rem;
+}
+
+.menuContainer {
+    margin: 25px 30px;
+    width: 10rem;
+    display: flex;
+    // justify-content: space-between;
+}
+
+.logoutItem {
+    margin: 25px 30px;
+    width: 10rem;
+    display: flex;
+    // justify-content: space-between;
+    position: fixed;
+    bottom: 10px;
+}
+
+.menuItem {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.menu{
+    position: relative;
+    top: 12px;
+}

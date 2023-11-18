@@ -1,0 +1,42 @@
+.container {
+    padding-top: 35px;
+
+    @media (min-width:279px) and (max-width:415px){
+        padding: 30px;
+    }
+
+    @media (min-width:767px) and (max-width:1181px){
+        padding-left: 55px;
+    }
+}
+
+.logoContainer {
+    display: flex;
+    // flex-direction: row;
+    position: absolute;
+}
+
+.title {
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+
+    @media (min-width:279px) and (max-width:415px){
+        justify-content: center;
+    }
+}
+
+
+p {
+    margin-bottom: 0 !important;
+}
+
+.images{
+    display: flex;
+    gap: 15px;
+    padding-top: 20px;
+}

@@ -1,0 +1,120 @@
+.container {}
+
+.rightSide {
+    background: #925FE2;
+    height: 100vh;
+    // padding: 50px !important;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+}
+
+.leftSide {
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    color: #EEE;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.subHeading {
+    color: #EEE;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
+}
+
+.subTitle {
+    color: #EEE;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 20px;
+}
+
+input {
+    width: 393px;
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.40);
+    ;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.login {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subLoginText {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 10px;
+}
+
+.forgotPass {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.btn {
+    display: flex;
+    width: 393px;
+    padding: 12px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: #9C6FE4;
+    color: #FFF;
+}
+
+.form {
+    margin: auto;
+}
+
+// .imgContianer{
+//     background-image: url('../../assets/login.svg');
+//     background-repeat: no-repeat;
+//     height: 600px;
+//     width: 750px;
+// }
+
+.loginBg{
+    position: absolute;
+    // top: 40px;
+    // right: 1rem;
+    margin: auto;
+    width: 45vw;
+    height: 70vh;
+    bottom: 0;
+}
+
+.textContainer{
+    padding: 40px;
+}

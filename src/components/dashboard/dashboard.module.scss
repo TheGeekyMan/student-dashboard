@@ -1,0 +1,11 @@
+.compContainer {
+    display: flex;
+
+    @media (min-width:767px) and (max-width:1181px){
+        flex-direction: column;
+    }
+
+    @media (min-width:279px) and (max-width:415px) {
+        flex-direction: column;
+    }
+}
