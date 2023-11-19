@@ -1,15 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styles from './homePageBanner.module.scss';
 import ScholarcapScroll from '../../../assets/ScholarcapScroll.svg';
 import CollegeStudent from '../../../assets/CollegeStudent.png';
 import Backpack from '../../../assets/Backpack.svg';
+import { Months } from '../../../constants/constants';
 
 const HomePageBanner = () => {
 
-    const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
     const date = new Date();
-    const currnetMonth = month[date.getMonth()];
+    const currnetMonth = Months[date.getMonth()];
     const currentDate = date.getDate();
     const currentYear = date.getFullYear();
 

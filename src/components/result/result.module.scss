@@ -1,0 +1,74 @@
+.container {
+    padding-top: 35px;
+    padding-left: 55px;
+
+    @media (min-width:279px) and (max-width:415px) {
+        padding: 30px;
+        // padding-left: 0;
+    }
+
+    @media (min-width:767px) and (max-width:1181px) {
+        padding-left: 55px;
+        width: 95%;
+    }
+}
+
+.formContainer {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+    box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+    background: #FFF;
+    height: 50vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    display: flex;
+    width: 193px;
+    padding: 12px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: #9C6FE4;
+    color: #FFF;
+    height: 50px;
+    border: none;
+    margin-top: 18px;
+
+    @media (min-width:279px) and (max-width:415px){
+        margin: auto;
+    }
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @media (min-width:279px) and (max-width:415px){
+        flex-direction: column;
+    }
+}
+
+.fail{
+    color: red;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.pass{
+    color: green;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.marksText{
+    padding: 30px;
+    text-align: center;
+}

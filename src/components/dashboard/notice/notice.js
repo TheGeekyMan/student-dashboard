@@ -8,7 +8,7 @@ const NoticeSection = () => {
     const navigate = useNavigate();
 
     return (
-        <div className={styles.container}>
+        <div className={currentPathName !== '/notice' ? styles.container : styles.noticeContainer}>
             <div className={styles.textContainer}>
                 <p className={styles.title}>Daily notice</p>
                 {currentPathName !== '/notice' && <p className={styles.seeAll} onClick={()=>navigate('/notice')}>See all</p>}
