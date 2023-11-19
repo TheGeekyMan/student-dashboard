@@ -9,7 +9,7 @@ const Schedule = () => {
             <div className={styles.content}>
                 {ScheduleList.map((item,index)=>{
                     return(
-                        <ul key={index}>
+                        <ul key={index} className={styles.listUl}>
                             <li className={styles.listTitle}>{item.title}</li>
                             <p className={styles.listSubTitle}>{item.subTitle}</p>
                         </ul>
